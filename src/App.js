@@ -33,9 +33,11 @@ const App = () => {
   } else {
     return (
       <>
-        {data.map((item) => (
-          <Card data={item} />
-        ))}
+        <div className="card-container">
+          {data.map((item) => (
+            <Card data={item} />
+          ))}
+        </div>
       </>
     );
   }

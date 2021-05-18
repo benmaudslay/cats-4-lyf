@@ -1,0 +1,20 @@
+.card {
+  padding: 15px;
+  border-radius: 20px;
+  box-shadow: 0 0px 25px 0 #ffb92e80;
+  background-color: #fff;
+  margin: 10px 0;
+  cursor: pointer;
+
+  transition: 100ms;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0px 25px 0 #ffb92e;
+}
+
+.card img {
+  height: 200px;
+  width: auto;
+}
