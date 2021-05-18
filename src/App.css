@@ -1,10 +1,42 @@
+@font-face {
+  font-family: IndigoReg;
+  src: url(./assets/fonts/indigo/Indigo\ Outline.otf);
+}
+
+body {
+  background-color: #ffe8bcde;
+}
+
+.wrapper {
+  margin: 10px;
+}
+
+header {
+  background-color: #ffa630;
+  color: white;
+  padding: 30px 30px 60px 30px;
+  margin: 5px 5px -45px 5px;
+  border-radius: 20px;
+
+  font-family: IndigoReg;
+  font-size: 24pt;
+}
+
+header h1 {
+  text-align: center;
+  /* margin-top: 10px; */
+}
+
+.basket {
+  height: fit-content;
+  position: absolute;
+  top: 35px;
+  right: 40px;
+}
+
 .card-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-}
-
-body {
-  background-color: #ffe8bc;
 }

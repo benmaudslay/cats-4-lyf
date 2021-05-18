@@ -1,5 +1,7 @@
-import "./App.css";
 import { useState, useEffect } from "react";
+
+import "./App.css";
+import basketIcon from "./assets/images/icons8-basket-64.png";
 
 import { Card } from "./components";
 
@@ -33,10 +35,18 @@ const App = () => {
   } else {
     return (
       <>
-        <div className="card-container">
-          {data.map((item) => (
-            <Card data={item} />
-          ))}
+        <div className="wrapper">
+          <header>
+            <h1>Cats4Lyf</h1>
+            <div className="basket">
+              <img src={basketIcon} alt="Basket" />
+            </div>
+          </header>
+          <div className="card-container">
+            {data.map((item) => (
+              <Card data={item} />
+            ))}
+          </div>
         </div>
       </>
     );

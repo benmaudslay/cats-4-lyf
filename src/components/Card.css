@@ -1,7 +1,7 @@
 .card {
-  padding: 15px;
+  padding: 15px 15px 5px 15px;
   border-radius: 20px;
-  box-shadow: 0 0px 25px 0 #ffb92e80;
+  box-shadow: 0 0px 13px 0 #ffb92eaa;
   background-color: #fff;
   margin: 10px 0;
   cursor: pointer;
@@ -10,11 +10,46 @@
 }
 
 .card:hover {
-  transform: scale(1.02);
-  box-shadow: 0 0px 25px 0 #ffb92e;
+  /* transform: scale(1.015); */
+  box-shadow: 0 0px 8px 4px #ffb92e;
 }
 
 .card img {
   height: 200px;
   width: auto;
+  border-radius: 10px;
+}
+
+.bottom-row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px 0;
+}
+
+.add-btn {
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+  padding: 0;
+  border-radius: 50%;
+  border: none;
+  background-color: #ffa630;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-btn:hover {
+  box-shadow: 0 0 4px 1px #ffa630;
+  /* transform: scale(1.05); */
+  background-color: #ffb92e;
+}
+
+.add-btn img {
+  height: 80%;
+  /* width: 100%; */
 }
