@@ -11,6 +11,11 @@ body {
   margin: 10px;
 }
 
+.dimmed {
+  background-color: grey;
+  opacity: 0.5;
+}
+
 header {
   background-color: #ffa630;
   color: white;
@@ -34,9 +39,48 @@ header h1 {
   right: 40px;
 }
 
+.basket::after {
+  content: "";
+  width: 40px;
+  height: 1px;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  /* background-color: white; */
+}
+
+.basket:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.basket:hover::after {
+  box-shadow: white 0px 3px 0px 0px;
+}
+
 .card-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
+}
+
+h2 {
+  font-family: IndigoReg;
+  font-size: 24pt;
+}
+
+.modalWrapper {
+  height: 300px;
+  width: 350px;
+  background-color: white;
+}
+
+@media (min-width: 350px) {
+  .modalWrapper {
+    height: 70vh;
+    width: 80vh;
+  }
 }
